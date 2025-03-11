@@ -1,0 +1,91 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-color: #333333;
+}
+
+header {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  height: 130px;
+}
+
+header > h1 {
+  margin-bottom: 0;
+}
+
+main {
+  color: white;
+}
+
+section.cards {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 200px 200px 200px;
+  justify-content: center;
+}
+
+.card {
+  border: transparent, 3px, green;
+  margin: 10px;
+  width: 170px;
+  height: 120px;
+  font-size: 3.5rem;
+  font-weight: 700;
+  border-radius: 4px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+  background-color: white;
+  cursor: pointer;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.card.red {
+  color: red;
+}
+.card.green {
+  color: green;
+}
+.card.blue {
+  color: blue;
+}
+
+.card.selected {
+  border: solid, 4px, green;
+}
+
+section.info {
+  display: flex;
+  gap: 100px;
+  justify-content: center;
+}
+
+.card.unclickable {
+  pointer-events: none;
+}
+
+.new-game {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  display: flex;
+}
+
+.new-game > button {
+  background-color: lightblue;
+  height: 70px;
+  width: 200px;
+  font-size: 1.75rem;
+  cursor: pointer;
+  margin-top: 10px;
+}
+.removing {
+  transform: translate(-100vw, -50vh);
+  transition: transform 0.5s ease-out;
+}
